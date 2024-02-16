@@ -1,6 +1,9 @@
 package com.aapoon.common.utilities;
 
 import java.net.URL;
+
+import org.aapoon.constants.Constants;
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.options.XCUITestOptions;
@@ -12,10 +15,10 @@ public class DriverFactory implements IDriverFactory {
 		try {
 
 			XCUITestOptions options = new XCUITestOptions();
-			options.setDeviceName("iPhone 14 Pro Max").setPlatformName("16.2")
-					.setBundleId("com.saucelabs.mydemoapp.rn");
+			options.setDeviceName(Constants.SetDeviceName).setPlatformName(Constants.OSPlatform)
+					.setBundleId(Constants.BundilId);
 
-			driver = new IOSDriver(new URL("http://0.0.0.0:4723"), options);
+			driver = new IOSDriver(new URL(Constants.AppiumServerUrl), options);
 
 			return driver;
 

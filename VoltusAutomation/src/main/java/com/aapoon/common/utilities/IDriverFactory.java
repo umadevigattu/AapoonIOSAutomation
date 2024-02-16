@@ -1,7 +1,5 @@
 package com.aapoon.common.utilities;
 
-import org.openqa.selenium.WebDriver;
-
 import io.appium.java_client.AppiumDriver;
 
 public interface IDriverFactory {
@@ -12,7 +10,6 @@ public interface IDriverFactory {
 		id, name, classname, tagname, xpath, cssselector, linktext, partiallinktext
 	}
 
-	
 	public enum ListItemInputType {
 		value, text, index
 	}

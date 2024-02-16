@@ -6,7 +6,7 @@ public class Constants {
 
 	public static final String TestData_Path = System.getProperty("user.dir") + "\\Config\\Configuration.properties";
 	
-	public static final String TestReportsPath = (System.getProperty("user.dir") + "\\extentReport\\WevaReports.html");
+	public static final String TestReportsPath = (System.getProperty("user.dir") + "\\extentReport\\AapoonReports.html");
 
 	/*
 	 * public static final String TestReportsPath = (System.getProperty("user.dir")
@@ -18,6 +18,15 @@ public class Constants {
 	public static final int MEDIUM_WAIT = 6000;
 	public static final int LONG_WAIT = 10000;
 	
-	public static final String Weva_Url = "https://3.105.110.219/login";
+	public static final String AppiumServerUrl = "http://0.0.0.0:4723";
+	public static final String SetDeviceName = "iPhone 14 Pro Max";
+	public static final String OSPlatform = "16.2";
+	public static final String BundilId = "com.saucelabs.mydemoapp.rn";
+	public static final String UserName = "bob@example.com";
+	public static final String Password = "10203040";
+	
+	
+	
+	
 
 }
